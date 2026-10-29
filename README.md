@@ -1,7 +1,7 @@
 # tinkertown-transit-reimbursements
 Script to automate the transit reimbursement process on Benepass.
 
-0. Place combined .pdf into a folder in transit directory
+0. Place combined .pdf (exported OMNY charges from omny.info) into a folder in transit directory
 1. Run `python3 pdf_burst.py transit/<new_folder>/<filename.pdf>`
 2. Run `python3 auth.py` to authenticate into Benepass and store session .json into transit directory
 3. Run `python3 uploader.py transit/<new_folder>/burst` to begin processing all files in that folder
